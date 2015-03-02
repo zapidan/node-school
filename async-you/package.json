@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "async": "latest",
+    "fs": "latest"
+  }
+}
