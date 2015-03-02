@@ -1,0 +1,13 @@
+{
+  "dependencies": {
+    "concat-stream": "latest",
+    "crypto": "latest",
+    "duplexer": "latest",
+    "request": "latest",
+    "split": "latest",
+    "stream-combiner": "latest",
+    "through": "latest",
+    "trumpet": "latest",
+    "websocket-stream": "latest"
+  }
+}
