@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "body-parser": "latest",
+    "express": "latest",
+    "jade": "latest",
+    "stylus": "latest"
+  }
+}
