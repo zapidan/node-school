@@ -1,0 +1,7 @@
+{
+  "dependencies": {
+    "through2-map": "latest",
+    "bl": "latest",
+    "concat-stream": "latest"
+  }
+}
