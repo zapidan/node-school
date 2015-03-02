@@ -5,13 +5,15 @@ Each level is contained in a folder with the solution and problem.
 
 Node School runs in the terminal. You will need npm package manager installed, then run
 
-```npm install -g learnyounode
+```
+npm install -g learnyounode
 ```
 
-To use Node School run ``` learnyounode ```
+To use Node School run `learnyounode`
 
 Install the dependencies from package.json by running
-```npm install
+```
+npm install
 ```
 A node_modules folder should be created with the libraries bl, concat-stream, and through2-map.
 
