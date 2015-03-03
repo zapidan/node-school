@@ -17,13 +17,14 @@ Your program should output:
 
 You can use the `split` module to split input by newlines. For example:
 
+``` js
     var split = require('split');
     process.stdin
         .pipe(split())
         .pipe(through(function (line) {
             console.dir(line.toString());
-        }))
-    ;
+        }));
+```
 
 Will buffer and split chunks on newlines before you get them. For example, for
 the `split.js` we just wrote we will get separate events for each line even

@@ -19,6 +19,7 @@ of the file contents from the archive and:
 
 Using the tar module looks like:
 
+``` js
     var tar = require('tar');
     var parser = tar.Parse();
     parser.on('entry', function (e) {
@@ -26,6 +27,7 @@ Using the tar module looks like:
     });
     var fs = require('fs');
     fs.createReadStream('file.tar').pipe(parser);
+```
 
 Use `crypto.createHash('md5', { encoding: 'hex' })` to generate a stream that
 outputs a hex md5 hash for the content written to it.

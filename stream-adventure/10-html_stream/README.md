@@ -5,12 +5,14 @@ You can use `trumpet` and `through` to solve this adventure.
 
 With `trumpet` you can create a transform stream from a css selector:
 
+``` js
     var trumpet = require('trumpet');
     var fs = require('fs');
     var tr = trumpet();
     fs.createReadStream('input.html').pipe(tr);
     
     var stream = tr.select('.beep').createStream();
+```
 
 Now `stream` outputs all the inner html content at `'.beep'` and the data you
 write to `stream` will appear as the new inner html content.

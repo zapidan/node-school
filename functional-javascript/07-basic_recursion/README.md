@@ -2,7 +2,7 @@ Recursion is a fundamental programming concept which can lead to elegant and eff
 
 A recursive function is a function which calls itself. For example, this recursive function will take an array of words, and return an array of those words, uppercased.
 
-```
+``` js
 function toUpperArray(items) {
    if (!items.length) return []             // end condition
    var head = items[0]                      // item to operate on
@@ -32,7 +32,7 @@ For simplicity, your implementation of reduce **need not replicate the behaviour
 
 ## Example
 
-```
+``` js
 // Your reduce function should behave the same as a
 // regular Array#reduce, but it will take the array
 // to operate on as the first argument:
@@ -56,7 +56,7 @@ reduce([1,2,3], function(prev, curr, index, arr) {
 
 ## Boilerplate
 
-```
+``` js
 function reduce(arr, fn, initial) {
   // SOLUTION GOES HERE
 }

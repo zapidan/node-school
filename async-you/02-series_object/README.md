@@ -6,7 +6,7 @@ function once it completes. `series` will **collect all results as an array**
 and pass it to the **optional callback** that runs **once all of the task functions
 have completed**. For example:
 
-```
+``` js
 async.series([
   function(callback){
     setTimeout(function() {
@@ -29,7 +29,7 @@ Instead of using an array as the result container `async.series` can use an
 object, running each property and creating a result object with the same
 properties. The above example can be written like so:
 
-```
+``` js
 async.series({
   one: function(done){
     done(null, '1');

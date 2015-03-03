@@ -6,7 +6,7 @@ Use Array#reduce to implement a simple version of Array#map.
 
 A function `map` that applies a function to each item in an array and collects the results in a new Array.
 
-```
+``` js
 
 var nums = [1,2,3,4,5]
 
@@ -31,7 +31,7 @@ console.log(output) // => [2,4,6,8,10]
 
 ## Boilerplate
 
-```
+``` js
 
 module.exports = function arrayMap(arr, fn) {
   // SOLUTION GOES HERE

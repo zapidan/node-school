@@ -6,7 +6,7 @@ You only need to check that the ids match.
 
 ## Example
 
-```
+``` json
 var goodUsers = [
   { id: 1 },
   { id: 2 },
@@ -48,7 +48,7 @@ Use array#some and Array#every to check every user passed to your returned funct
 
 ## Boilerplate
 
-```
+``` js
 function checkUsersValid(goodUsers) {
   return function(submittedUsers) {
     // SOLUTION GOES HERE

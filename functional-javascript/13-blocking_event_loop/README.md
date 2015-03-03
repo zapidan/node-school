@@ -22,7 +22,7 @@ Try to perform as many operations as you can before the timeout fires!
 
 ## Boilerplate
 
-```
+``` js
 function repeat(operation, num) {
   // modify this so it can be interrupted
   if (num <= 0) return

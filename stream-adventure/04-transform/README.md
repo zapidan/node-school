@@ -15,17 +15,22 @@ to transform data.
 When you specify a falsy value for the `write` argument, this function is used
 to pass input data directly through to the output unmodified:
 
+``` js
     function write (buf) { this.queue(buf) }
+```
  
 The `this.queue(null)` tells the consuming stream to not expect any more data.
 
 The default `end` function is just:
+``` js
 
     function end () { this.queue(null) }
+```
 
 For example, here is a program that fires the `write(buf)` and `end()` callbacks
 by calling `.write()` and `.end()` manually:
 
+``` js
     var through = require('through');
     var tr = through(write, end);
     tr.write('beep\n');
@@ -34,6 +39,7 @@ by calling `.write()` and `.end()` manually:
     
     function write (buf) { console.dir(buf) }
     function end () { console.log('__END__') }
+```
 
 Instead of calling `console.dir(buf)`, your code should use `this.queue()` in
 your `write()` function to output upper-cased data.
@@ -41,7 +47,9 @@ your `write()` function to output upper-cased data.
 Don't forget to feed data into your stream from stdin and output data from
 stdout, which should look something like:
 
+``` js
     process.stdin.pipe(tr).pipe(process.stdout);
+```
 
 Note that the chunks you will get from `process.stdin` are Buffers, not strings.
 You can call `buf.toString()` on a Buffer to get a string and strings can do

@@ -4,7 +4,7 @@ Given an Array of strings, use `Array#reduce` to create an object that contains 
 
 ## Example
 
-```
+``` js
 var inputWords = ['Apple', 'Banana', 'Apple', 'Durian', 'Durian', 'Durian']
 
 console.log(countWords(inputWords))
@@ -33,7 +33,7 @@ console.log(countWords(inputWords))
 
 ## Boilerplate
 
-```
+``` js
 function countWords(inputWords) {
   // SOLUTION GOES HERE
 }

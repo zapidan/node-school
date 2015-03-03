@@ -6,7 +6,7 @@ This is where `async.each` is useful.
 
 For example, the following will make three calls using the values in the array:
 
-```
+``` js
 var http = require('http')
   , async = require('async');
 async.each(['cat', 'meerkat', 'penguin'], function(item, done){

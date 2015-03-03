@@ -2,7 +2,7 @@
 
 Convert the following code from a for-loop to Array#map:
 
-```
+``` js
 function doubleAll(numbers) {
   var result = []
   for (var i = 0; i < numbers.length; i++) {
@@ -30,7 +30,7 @@ module.exports = doubleAll
 
 ## Boilerplate
 
-```
+``` js
 function doubleAll(numbers) {
   // SOLUTION GOES HERE
 }

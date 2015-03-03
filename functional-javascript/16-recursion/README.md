@@ -10,7 +10,7 @@ Multiple versions of the same module are allowed, but duplicates modules of the 
 
 ## Example
 
-```
+``` js
 var loremIpsum = {
   "name": "lorem-ipsum",
   "version": "0.1.1",
@@ -39,7 +39,7 @@ getDependencies(loremIpsum) // => [ 'inflection@1.2.6', 'optimist@0.3.7', 'wordw
 
 ## Boilerplate
 
-```
+``` js
 
 function getDependencies(tree) {
   // SOLUTION GOES HERE

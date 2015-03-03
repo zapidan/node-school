@@ -8,12 +8,12 @@ the user in JSON format.
 
 In Express.js to extract query string parameters, we can use:
 
-```
+``` js
 req.query.NAME
 ```
 
 To output JSON we can use:
 
-```
+``` js
 res.send(object)
 ```

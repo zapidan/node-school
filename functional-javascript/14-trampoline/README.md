@@ -1,6 +1,6 @@
 The boilerplate includes a definition of `repeat`. `repeat` will take a Function operation, and a Number num, and invoke operation num times:
 
-```
+``` js
 var count = 0
 repeat(function() {
   count++
@@ -12,7 +12,7 @@ console.log('executed %d times.', count)
 
 BUT note that executing `repeat` with a large `num` causes a stack overflow:
 
-```
+``` js
 var count = 0
 repeat(function() {
   count++
@@ -41,7 +41,7 @@ You can assume that the operation passed to repeat does not take arguments (or t
 
 ## Boilerplate
 
-```
+``` js
 function repeat(operation, num) {
   // Modify this so it doesn't cause a stack overflow!
   if (num <= 0) return

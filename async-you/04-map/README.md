@@ -9,7 +9,7 @@ The results are in an array that is in the **same order** as the original array.
 
 For example, the example in the EACH problem can be written as:
 
-```
+``` js
 var http = require('http')
   , async = require('async');
 async.map(['cat', 'meerkat', 'penguin'], function(item, done){

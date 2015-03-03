@@ -41,7 +41,7 @@ e.g.
 
 ## Boilerplate
 
-```
+``` js
 function getShortMessages(messages) {
   // SOLUTION GOES HERE
 }

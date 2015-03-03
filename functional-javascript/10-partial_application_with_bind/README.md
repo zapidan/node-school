@@ -14,7 +14,7 @@ Make sure *all* arguments passed to the returned logging function are printed.
 
 ## Example
 
-```
+``` js
 
 var info = logger('INFO:')
 info('this is an info message')
@@ -32,7 +32,7 @@ warn('this is a warning message', 'with more info')
 
 ## Boilerplate
 
-```
+``` js
 
 module.exports = function(namespace) {
   // SOLUTION GOES HERE

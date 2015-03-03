@@ -6,7 +6,7 @@ A **string** is any value surrounded by quotes.
 
 It can be single or double quotes:
 
-```
+``` js
 'this is a string'
 
 "this is also a string"
@@ -18,7 +18,7 @@ For this challenge, create a file named `strings.js`.
 
 In that file create a variable named `someString` like this:
 
-```
+``` js
 var someString = 'this is a string';
 ```
 

@@ -5,6 +5,7 @@ the `concat-stream` module before writing it to stdout.
 complete contents of a stream as a single buffer. Here's an example that uses
 concat to buffer POST content in order to JSON.parse() the submitted data:
 
+``` js
     var concat = require('concat-stream');
     var http = require('http');
     
@@ -18,6 +19,7 @@ concat to buffer POST content in order to JSON.parse() the submitted data:
         else res.end();
     });
     server.listen(5000);
+```
 
 In your adventure you'll only need to buffer input with `concat()` from
 process.stdin.

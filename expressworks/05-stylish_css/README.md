@@ -7,14 +7,14 @@ The path containing the HTML and Stylus files is provided in `process.argv[3]`
 
 The `main.styl` file:
 
-```
+``` stylus
 p
   color red
 ```
 
 The `index.html` file:
 
-```
+``` html
 <html>
   <head>
     <title>expressworks</title>
@@ -32,7 +32,7 @@ The `index.html` file:
 
 To plug-in stylus someone can use this middleware:
 
-```
+``` js
 app.use(require('stylus').middleware(__dirname + '/public'));
 ```
 
@@ -43,6 +43,6 @@ Remember that you need also to serve static files.
 For your own projects, Stylus requires to be installed like any other
 dependency:
 
-```
+``` js
 npm install stylus
 ```

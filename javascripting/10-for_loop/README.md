@@ -4,7 +4,7 @@
 
 For loops look like this:
 
-```
+``` js
 for (var i = 0; i < 10; i++) {
   // log the numbers 0 through 9
   console.log(i)
@@ -30,7 +30,7 @@ Create a for loop with a variable `i` starting at 0 and increasing by 1 each tim
 
 On each iteration of the loop, add the number `i` to the `total` variable. To do this, you can use this statement:
 
-```js
+``` js
 total += i;
 ```
 

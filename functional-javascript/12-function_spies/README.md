@@ -6,7 +6,7 @@ Create a spy that keeps track of how many times a function is called.
 
 ## Example
 
-```
+``` js
 var spy = Spy(console, 'error')
 
 console.error('calling console.error')
@@ -32,7 +32,7 @@ console.log(spy.count) // 3
 
 ## Boilerplate
 
-```
+``` js
 function Spy(target, method) {
   // SOLUTION GOES HERE
 }

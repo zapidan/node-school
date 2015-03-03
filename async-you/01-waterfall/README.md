@@ -24,7 +24,7 @@ For example the following code will:
    parameter and `JSON.parse`'s it to get to the `port` property then it does
    another GET request.
 
-```
+``` js
 var http = require('http')
   , async = require('async');
 

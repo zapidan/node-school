@@ -4,7 +4,7 @@ Write a function that allows you to use `Array.prototype.slice` without using `.
 
 Normally you have to use `slice` with `call` or `apply`:
 
-```
+``` js
 var slice = Array.prototype.slice
 
 function() {
@@ -14,7 +14,7 @@ function() {
 
 We want this to work:
 
-```
+``` js
 var slice = yourFunction
 
 function() {
@@ -26,7 +26,7 @@ function() {
 
 A function, `slice` that exhibits the following behaviour:
 
-```
+``` js
 var nums = [1,2,3,4,5]
 
 // your slice function should match the regular
@@ -53,7 +53,7 @@ nums.slice(1, 2) // [2]
 * Function#call executes whatever the value of `this` when it's invoked.  e.g. someFunction.call() // `this` inside `call` is `someFunction`
 * Function.call itself is a function thus it inherits from `Function.prototype`
 
-```
+``` js
 function myFunction() {
   console.log('called my function')
 }
@@ -63,6 +63,6 @@ Function.prototype.call.call(myFunction) // => "called my function"
 
 ## Boilerplate
 
-```
+``` js
 module.exports = // your solution here!
 ```

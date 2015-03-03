@@ -10,13 +10,13 @@ Each item in an array is identified by a number, starting at `0`.
 
 So in this array `hi` is identified by the number `1`:
 
-```
+``` js
 var greetings = ['hello', 'hi', 'good morning'];
 ```
 
 It can be accessed like this:
 
-```
+``` js
 greetings[1];
 ```
 
@@ -28,7 +28,7 @@ Create a file named `looping-through-arrays.js`.
 
 In that file, define a variable named `pets` that references this array:
 
-```
+``` js
 ['cat', 'dog', 'rat'];
 ```
 
@@ -36,7 +36,7 @@ Create a for loop that changes each string in the array so that they are plural.
 
 You will use a statement like this inside the for loop:
 
-```
+``` js
 pets[i] = pets[i] + 's';
 ```
 

@@ -6,7 +6,7 @@ Conditional statements are used to alter the control flow of a program, based on
 
 A conditional statement looks like this:
 
-```
+``` js
 if (n > 1) {
   console.log('the variable n is greater than 1.');
 } else {

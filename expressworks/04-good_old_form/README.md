@@ -7,7 +7,7 @@ Write a route (`'/form'`) that processes HTML form input
 
 To handle POST request use the `post()` method which is used the same way as `get()`:
 
-```
+``` js
 app.post('/path', function(req, res){...})
 ```
 
@@ -25,7 +25,7 @@ middleware as a parameter.
 To parse `x-www-form-urlencoded` request bodies Express.js can use `urlencoded()`
 middleware from the `body-parser` module.
 
-```
+``` js
 var bodyparser = require('body-parser')
 app.use(bodyparser.urlencoded({extended: false}))
 ```
@@ -40,7 +40,7 @@ The documentation of the body-parser module can be found here:
 
 Here is how we can flip the characters:
 
-```
+``` js
 req.body.str.split('').reverse().join('')
 ```
 
@@ -51,7 +51,7 @@ req.body.str.split('').reverse().join('')
 When creating your projects from scratch, install the `body-parser` dependency
 with npm by running:
 
-```
+``` js
 $ npm install body-parser
 ```
 

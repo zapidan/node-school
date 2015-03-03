@@ -8,7 +8,7 @@ Write a function that takes an input string and returns it uppercased.
 
 ## Boilerplate
 
-```
+``` js
 function upperCaser(input) {
   // SOLUTION GOES HERE
 }

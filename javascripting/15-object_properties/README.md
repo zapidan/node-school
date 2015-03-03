@@ -6,7 +6,7 @@ You can access and manipulate object properties –– the keys and values that 
 
 Here's an example using **square brackets**:
 
-```
+``` js
 var example = {
   pizza: 'yummy'
 };
@@ -18,7 +18,7 @@ The above code will print the string `'yummy'` to the terminal.
 
 Alternately, you can use **dot notation** to get identical results:
 
-```
+``` js
 example.pizza;
 
 example['pizza'];
@@ -32,7 +32,7 @@ Create a file named `object-properties.js`.
 
 In that file, define a variable named `food` like this:
 
-```
+``` js
 var food = {
   types: 'only pizza'
 };

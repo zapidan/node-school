@@ -1,6 +1,6 @@
 This is an example implementation of `curry3`, which curries up to 3 arguments:
 
-```
+``` js
 function curry3(fun){
   return function(three){
     return function(two){
@@ -14,7 +14,7 @@ function curry3(fun){
 
 If we were to use this implementation with this sample function:
 
-```
+``` js
 function abc(one, two, three) {
   return one/two/three
 }
@@ -22,7 +22,7 @@ function abc(one, two, three) {
 
 It would work like so:
 
-```
+``` js
 var curryC = curry3(abc)
 var curryB = curryC(2)
 var curryA = curryB(3)
@@ -41,7 +41,7 @@ In this challenge, we're going to implement a 'curry' function for an arbitrary 
 
 ## Example
 
-```
+``` js
 function add3(one, two, three) {
   return one + two + three
 }
@@ -65,7 +65,7 @@ console.log(curryN(add3)(1)(2)(3)) // => 6
 
 ## Boilerplate
 
-```
+``` js
 function curryN(fn, n) {
   // SOLUTION GOES HERE
 }

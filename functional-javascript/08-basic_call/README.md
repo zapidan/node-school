@@ -6,7 +6,7 @@ In JavaScript, in order to write robust programs we sometimes need to check an o
 
 We can use Object#hasOwnProperty to detect if an object 'has' a property defined on itself (i.e. not inherited from its prototype):
 
-```
+``` js
 var duck = {
   quack: function() {
     console.log('quack')
@@ -29,7 +29,7 @@ object.hasOwnProperty('quack')                     // => true
 
 But what if an object doesn't inherit from Object.prototype?
 
-```
+``` js
 // create an object with 'null' prototype.
 var object = Object.create(null)
 object.quack = function() {
@@ -45,7 +45,7 @@ object.hasOwnProperty('quack')
 
 We can still use `hasOwnProperty` from the `Object.prototype` though, if we call it with the `this` value set to something that 'looks like an object'. Function#call allows us to invoke any function with an altered `this` value.
 
-```
+``` js
 // the first argument to call becomes the value of `this`
 // the rest of the arguments are passed to the function as per
 
@@ -58,7 +58,7 @@ Write a function `duckCount` that returns the number of arguments passed to it w
 
 Example:
 
-```
+``` js
 var notDuck = Object.create({quack: true})
 var duck = {quack: true}
 duckCount(duck, notDuck) // 1
@@ -77,7 +77,7 @@ duckCount(duck, notDuck) // 1
 
 * The `arguments` variable, available in every function, is an *Object* that quacks like an *Array*:
 
-```
+``` js
 {
   0: 'argument0',
   1: 'argument1', // etc
@@ -96,7 +96,7 @@ duckCount(duck, notDuck) // 1
 
 ## Boilerplate
 
-```
+``` js
 function duckCount() {
   // SOLUTION GOES HERE
 }

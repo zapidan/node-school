@@ -18,7 +18,7 @@ We will use the `Math.round()` method to round the number up.
 
 An example of using `Math.round()`:
 
-```
+``` js
 Math.round(0.5);
 ```
 

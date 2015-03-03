@@ -37,7 +37,7 @@ if you use recursion instead.
 
 ## Boilerplate
 
-```
+``` js
 function repeat(operation, num) {
   // SOLUTION GOES HERE
 }

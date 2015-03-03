@@ -5,7 +5,7 @@ The port is passed in `process.argv[2]`.  The file name is passed in `process.ar
 
 Respond with:
 
-```
+``` js
 res.json(object)
 ```
 
@@ -18,12 +18,12 @@ Everything should match the '/books' resource path.
 
 For reading, there's an fs module, e.g.,
 
-```
+``` js
 fs.readFile(filename, callback)
 ```
 
 While the parsing can be done with `JSON.parse`:
 
-```
+``` js
 object = JSON.parse(string)
 ```

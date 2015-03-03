@@ -4,7 +4,7 @@
 
 An array is a list of values. Here's an example:
 
-```
+``` js
 var pets = ['cat', 'dog', 'rat'];
 ```
 

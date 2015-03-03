@@ -4,8 +4,7 @@ More formally: Partial application refers to the process of fixing a number of a
 
 As an example, say we have a function `add`, that takes 2 arguments and adds them together:
 
-```
-
+``` js
 function add(x, y) {
   return x + y
 }
@@ -18,7 +17,7 @@ Now, pretend we have a function `partiallyApply`. `partiallyApply` takes a funct
 
 Here we 'partially apply' the first parameter, `x`, of our `add` function:
 
-```
+``` js
 
 var addTen = partiallyApply(add, 10) // fix `x` to 10
 
@@ -28,7 +27,7 @@ var addTen = partiallyApply(add, 10) // fix `x` to 10
 
 Once we pass the argument for `y`, we can execute the original `add` function:
 
-```
+``` js
 
 addTen(20) // => 30
 addTen(100) // => 110
@@ -58,7 +57,7 @@ Make sure *all* arguments passed to the returned logging function are printed.
 
 ## Example
 
-```
+``` js
 
 var info = logger('INFO:')
 info('this is an info message')
@@ -76,7 +75,7 @@ warn('this is a warning message', 'with more info')
 
 ## Boilerplate
 
-```
+``` js
 
 var slice = Array.prototype.slice
 
@@ -97,7 +96,7 @@ module.exports = logger
 
 Remember `console.log` takes any number of arguments and prints them, separated by spaces:
 
-```
+``` js
 
 console.log('hello', 'world') // => 'hello world'
 console.log(1,2,3) // => 1 2 3
@@ -109,16 +108,16 @@ We simply want to 'partially apply' the first argument to `console.log`.
 `Function.prototype.apply` allows us to execute a function, supply a new 'value for this' (we can ignore in this case), and then *an array of arguments to apply to the function*:
 
 
-```
+``` js
 
 add(10, 20) // => 30
 add.apply(null, [10, 20]) // => 30
 
-```
+``` 
 
 Also contrast `apply` with `Function.prototype.call`:
 
-```
+``` js
 
 add.apply(null, [10, 20]) // => 30
 add.call(null, 10, 20) // => 30

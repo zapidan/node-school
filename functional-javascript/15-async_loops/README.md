@@ -2,7 +2,7 @@ This code is broken!
 
 A Java developer has committed this terrible code to our codebase and didn't test it!
 
-```
+``` js
 function loadUsers(userIds, load, done) {
   var users = []
   for (var i = 0; i < userIds.length; i++) {
@@ -38,7 +38,7 @@ The order of the users should match the order of supplied user ids. Because this
 when using `functional-javascript run`.
 
 ## Boilerplate
-```
+``` js
 function loadUsers(userIds, load, done) {
   var users = []
   for (var i = 0; i < userIds.length; i++) {

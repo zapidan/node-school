@@ -7,18 +7,20 @@ also streams?
 
 For example, we can stream a file to the response object:
 
+``` js
     var http = require('http');
     var fs = require('fs');
     var server = http.createServer(function (req, res) {
         fs.createReadStream('file.txt').pipe(res);
     });
     server.listen(process.argv[2]);
+```
 
 This is great because our server can response immediately without buffering
 everything in memory first.
 
 We can also stream a request to populate a file with data:
-
+``` js
     var http = require('http');
     var fs = require('fs');
     var server = http.createServer(function (req, res) {
@@ -28,14 +30,16 @@ We can also stream a request to populate a file with data:
         res.end('beep boop\n');
     });
     server.listen(process.argv[2]);
+```
 
 You can test this post server with curl:
-
+``` sh
     $ node server.js 8000 &
     $ echo hack the planet | curl -d@- http://localhost:8000
     beep boop
     $ cat post.txt
     hack the planet
+```
 
 Your http server should listen on the port given at process.argv[2] and convert
 the POST request written to it to upper-case using the same approach as the
@@ -44,11 +48,13 @@ TRANSFORM example.
 As a refresher, here's an example with the default through callbacks explicitly
 defined:
 
+``` js
     var through = require('through')
     process.stdin.pipe(through(write, end)).pipe(process.stdout);
     
     function write (buf) { this.queue(buf) }
     function end () { this.queue(null)
+```
 
 Do that, but send upper-case data in your http server in response to POST data.
 
