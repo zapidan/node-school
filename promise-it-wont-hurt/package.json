@@ -1,0 +1,7 @@
+{
+  "dependencies": {
+    "lodash": "latest",
+    "q": "latest",
+    "q-io": "latest"
+  }
+}
