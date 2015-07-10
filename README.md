@@ -1,4 +1,4 @@
-##node school
+##node school.
 Practice problems with my solutions for [Node School]
 
 Each workshop is contained in a folder with instructions to run it. It follows the same pattern of one folder per level with the problem and solution. There is also a script *run_all.sh* file to run all the solutions for a workshop at once.
